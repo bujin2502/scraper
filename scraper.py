@@ -17,8 +17,8 @@ for page in range(1, 33):
 
     for divs in soup.find_all('div', class_='col-sm-3 col-xs-6'):
         ime = divs.a.text
-        print(ime)
-        print()
+        #print(ime)  #samo provjera radi li
+        #print()
         csv_writer.writerow([ime])
     sleep(randint(1, 2))
 
